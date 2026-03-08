@@ -33,6 +33,7 @@ GSM_BAUD = 9600
 # Buzzer GPIO pin
 BUZZER_PIN = 18
 
+#Button GPIO pin
 BUTTON_PIN = 17
 
 # Alarm duration (seconds)
