@@ -33,9 +33,6 @@ GSM_BAUD = 9600
 # Buzzer GPIO pin
 BUZZER_PIN = 18
 
-#Button GPIO pin
-BUTTON_PIN = 17
-
 # Alarm duration (seconds)
 ALARM_DURATION = 20   # user adjustable
 
@@ -46,21 +43,7 @@ PHONE_NUMBERS = [
 ]
 
 # Emergency messages
-EMERGENCY_MESSAGE1 = "ALERT: CYCLE BREACHED."
-EMERGENCY_MESSAGE2 = "EMERGENCY ALERT: Immediate assistance required!"
-
-# -----------------------------
-# BUTTON SETUP
-# -----------------------------
-
-button = Button(BUTTON_PIN, pull_up=True)
-
-
-def button_pressed():
-    emergency_procedure()
-
-
-button.when_pressed = button_pressed
+EMERGENCY_MESSAGE = "ALERT: CYCLE BREACHED."
 
 # ------------------------------------------------
 # HARDWARE INITIALIZATION
@@ -87,8 +70,6 @@ time.sleep(2)
 # ------------------------------------------------
 # GSM FUNCTIONS
 # ------------------------------------------------
-
-CALL_DURATION = 20  # seconds per call
 
 def send_sms(phone_number, message):
     """
