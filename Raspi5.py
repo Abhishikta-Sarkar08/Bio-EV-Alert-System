@@ -1,14 +1,10 @@
 """
 Raspberry Pi Full code (gpiozero version)
-(Shon Swapnanil, ei comment er jayega ta update korte thakbiaccording to ki ki modifications korchhish iei code e)
-
 Functions:
-
 Fingerprint integration:-
     1. Read authentication status from Arduino Nano
     2. Trigger buzzer alarm on ALERT signal
     3. Send SMS using SIM900A GSM module
-Push button integration (cholche)
 
 Author: System Integration Workflow
 """
